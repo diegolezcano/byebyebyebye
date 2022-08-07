@@ -1,10 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:o="clr-namespace:Octane.Xamarin.Forms.VideoPlayer;assembly=Octane.Xamarin.Forms.VideoPlayer"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:video="clr-namespace:MediaManager.Forms;assembly=MediaManager.Forms"
              x:Class="byeApp.MainPage">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="7*" />
+            <RowDefinition Height="3*" />
+        </Grid.RowDefinitions>
+        
+        <video:VideoView Grid.Row="0" VerticalOptions="Fill"/>
 
-    <o:VideoPlayer Source="http://vjs.zencdn.net/v/oceans.mp4" />
-
+        <Button Text="End Meeting" 
+                BackgroundColor="#EE0000"
+                TextColor="White"
+                Margin="100"
+                Clicked="playVideo"
+                Grid.Row="1" VerticalOptions="Fill"/>
+    </Grid>
 </ContentPage>
                                                                                                                                                           

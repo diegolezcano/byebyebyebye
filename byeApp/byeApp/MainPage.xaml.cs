@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MediaManager;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -13,6 +14,11 @@ namespace byeApp
         public MainPage()
         {
             InitializeComponent();
+        }
+
+        private void playVideo(object sender, EventArgs e)
+        {
+            CrossMediaManager.Current.Play("file:///android_asset/main.mp4");
         }
     }
 }

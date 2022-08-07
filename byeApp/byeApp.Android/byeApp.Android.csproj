@@ -54,8 +54,8 @@
     <Reference Include="System.Numerics.Vectors" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Octane.Xam.VideoPlayer">
-      <Version>3.1.0</Version>
+    <PackageReference Include="Plugin.MediaManager.Forms">
+      <Version>1.1.1</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2196" />
     <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
@@ -94,6 +94,9 @@
       <Project>{AEEA459D-31B8-4891-BD90-BA999CB4E75F}</Project>
       <Name>byeApp</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\main.mp4" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
